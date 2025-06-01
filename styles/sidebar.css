@@ -1,0 +1,90 @@
+/* Sidebar styles for the navigation menu */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 55px; /* Below the header */
+  bottom: 0;
+  width: 240px; /* Fixed width for the sidebar */
+  background-color: #212121; /* Dark gray background */
+  z-index: 200; /* Above other elements */
+  padding-top: 5px;
+  overflow-y: auto; /* Enable scrolling for overflow */
+  height: calc(100vh - 55px); /* Full height minus header */
+  scrollbar-width: none; /* Hide scrollbar in Firefox by default */
+}
+
+/* Hide scrollbar by default in WebKit browsers */
+.sidebar::-webkit-scrollbar {
+  width: 8px;
+  display: none;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: transparent; /* Transparent track */
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #606060; /* Gray thumb */
+  border-radius: 4px; /* Rounded edges */
+}
+
+/* Show scrollbar on hover in WebKit browsers */
+.sidebar:hover::-webkit-scrollbar {
+  display: block;
+}
+
+/* Show scrollbar on hover in Firefox */
+.sidebar:hover {
+  scrollbar-width: thin;
+  scrollbar-color: #606060 transparent;
+}
+
+/* Sidebar link styling */
+.sidebar-link {
+  display: flex;
+  align-items: center; /* Center items vertically */
+  padding: 10px 24px;
+  color: #fff; /* White text */
+  text-decoration: none;
+  font-size: 14px;
+  cursor: pointer; /* Indicate it's clickable */
+}
+
+.sidebar-link:hover {
+  background-color: #383838; /* Darker gray on hover */
+}
+
+.sidebar-link.active {
+  background-color: #383838; /* Highlight active link */
+  margin: 8px 10px 2px 4px;
+  border-radius: 12px; /* Rounded corners for active link */
+}
+
+.sidebar-link img {
+  width: 24px;
+  height: 24px;
+  margin-right: 24px; /* Space between icon and text */
+}
+
+.sidebar-link div {
+  flex: 1; /* Take up remaining space */
+  font-family: Roboto, Arial, sans-serif;
+}
+
+/* Section title styling for sidebar sections */
+.sidebar-section-title {
+  color: #aaaaaa; /* Light gray text */
+  font-size: 12px;
+  font-weight: 500;
+  padding: 16px 24px;
+  text-transform: uppercase; /* Uppercase for emphasis */
+}
+
+/* Separator line between sections */
+.line-between {
+  height: 1px;
+  background-color: #383838; /* Dark gray line */
+  padding: 0.5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}

@@ -1,0 +1,15 @@
+/* Reset paragraph margins for consistent spacing */
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* Base styles for the body */
+body {
+  font-family: Roboto, Arial; /* Use Roboto font with Arial as fallback */
+  margin: 0; /* Remove default margins */
+  padding-top: 80px; /* Space for fixed header */
+  padding-left: 96px; /* Space for fixed sidebar */
+  padding-right: 24px; /* Right padding for content */
+  background-color: rgb(0, 0, 0); /* Dark background to match YouTube's theme */
+}
